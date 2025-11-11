@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 0.75rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+.error {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #fca5a5;
+}

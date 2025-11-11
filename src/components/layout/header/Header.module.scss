@@ -1,0 +1,29 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.header{
+
+}
+
+.logo{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logoPic{
+    height: 7rem;
+    width: auto;
+    object-fit: contain;
+}
