@@ -2,6 +2,7 @@ import type { FormEvent} from "react";
 import { useState } from "react";
 import "../../../assets/scss/App.scss";
 import GlobalButton from "../../common/button/GlobalButton";
+import styles from "./SearchBar.module.scss";
 
 interface SearchBarProps {
     initialValue?: string;
@@ -23,7 +24,7 @@ export const SearchBar = ({ initialValue = "", onSearch }: SearchBarProps) => {
                     <form className="input-group mb-3" onSubmit={handleSubmit}>
                         <GlobalButton variant="primary" isBack type="button"/>
                         <input
-                            className="form-control"
+                            className={styles.input}
                             type="text"
                             placeholder="Search for a movie..."
                             value={value}
