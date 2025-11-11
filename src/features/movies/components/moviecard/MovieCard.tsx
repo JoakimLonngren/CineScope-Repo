@@ -39,7 +39,7 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
                     </span>
                 </header>
 
-                <p className={styles.rating}>⭐ {movie.voteAverage.toFixed(1)}</p>
+                <p className={styles.rating}>⭐ {movie.voteAverage.toFixed(1)} / 10</p>
 
                 <p className={styles.overview}>
                     {movie.overview || "No description available."}

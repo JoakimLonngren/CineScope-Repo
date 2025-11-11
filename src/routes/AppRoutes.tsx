@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "../components/layout/Layout";
 import { HomePage } from "../features/movies/pages/homepage/HomePage";
-import SearchPage from "../features/movies/pages/searchpage/SearchPage";
+import { SearchPage } from "../features/movies/pages/searchpage/SearchPage";
 import MovieDetailPage from "../features/movies/pages/moviedetailpage/MovieDetailPage";
 
 
