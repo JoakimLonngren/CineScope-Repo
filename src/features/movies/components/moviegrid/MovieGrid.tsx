@@ -16,9 +16,15 @@ export const MovieGrid = ({ movies, isLoading }: MovieGridProps) => {
         return <p className={styles.message}>No movies found.</p>
     }
 
+    const sortedMovies = [...movies].sort((a, b) => {
+        if(a.posterPath && !b.posterPath) return -1;
+        if(!a.posterPath && b.posterPath) return 1;
+        return 0;
+    });
+
     return (
         <section className={styles.grid} aria-label="Movies">
-            {movies.map((movie) => (
+            {sortedMovies.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
             ))}
         </section>
