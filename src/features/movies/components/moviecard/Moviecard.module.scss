@@ -50,11 +50,18 @@
     font-weight: 600;
     line-height: 1.3;
     color: #d1d5db;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .releaseDate {
     font-size: 0.8rem;
     color: #9ca3af;
+    
 }
 
 .rating {
