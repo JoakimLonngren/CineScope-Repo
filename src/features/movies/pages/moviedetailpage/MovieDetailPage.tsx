@@ -4,7 +4,7 @@ import { useFavoritesStore } from "../../../../store/useFavoritesStore";
 import GlobalButton from "../../../../components/common/button/GlobalButton";
 import styles from "./MovieDetailPage.module.scss";
 
-const BACKDROP_BASE_URL = "https://image.tmdb.org/t/p/w780";
+const BACKDROP_BASE_URL = "https://image.tmdb.org/t/p/original";
 const POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342";
 
 export const MovieDetailPage = () => {
