@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+**avaLonn CineScope**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CineScope** is a movie discovery web app build with React and TypeScript, powered by The Movie Database (TMDB) API.
+Users can expect a wide arrange of movies, through popular choice and also by search-function. View detailed information about each film,
+through a clean and responsive UI. 
 
-Currently, two official plugins are available:
+**Live DEMO deployed on Vercel**
+-Link: https://cinescope-theta.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-------------------------------------------------
 
-## React Compiler
+**Features**
+  -Browse popular movies.
+  -Search for movies by title.
+  -Detailed movie view (Plot-information, release date, rating, movie-poster).
+  -Responsive design for seamless usage across all types of screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-------------------------------------------------
 
-## Expanding the ESLint configuration
+**Features to be added at a later stage**
+  -Working favorite-page which shows every movie the user have favorited.
+  -Functionality to also include series.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-------------------------------------------------
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Tech stack**
+  -Framework        | React + TypeScript                 |
+  -Build            | Vite                               |
+  -Routing          | React Router                       |
+  -Fetching         | TanStack React Query               |
+  -HTTP Client      | Axios                              |
+  -State management | Zustand                            |
+  -Styling          | SCSS modules and bootstrap         |
+  -API              | TMDB ( The Movie Database ) API V3 |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  -------------------------------------------------
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  **Project structure**
+  -Aims to be modular and scalable for easier future implementations.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  
+  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  
