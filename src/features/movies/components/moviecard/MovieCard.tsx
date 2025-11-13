@@ -35,7 +35,7 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
                 <header className={styles.header}>
                     <h2 className={styles.title}> {movie.title} </h2>
                     <span className={styles.releaseDate}>
-                        {movie.releaseDate?.slice(0, 4) ?? "-"}
+                        {movie.releaseDate?.slice(0, 4) ?? "Year unknown"}
                     </span>
                 </header>
 
@@ -47,7 +47,6 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
 
                 <GlobalButton
                     type="button"
-                    className={styles.favoriteButton}
                     onClick={() => toggleFavorite(movie)}
                     label={isFavorite ? "Remove favorite" : "Add favorite"}
                 />

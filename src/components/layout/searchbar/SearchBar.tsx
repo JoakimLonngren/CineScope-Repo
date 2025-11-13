@@ -15,6 +15,7 @@ export const SearchBar = ({ initialValue = "", onSearch }: SearchBarProps) => {
     const handleSubmit = (event: FormEvent) => {
         event.preventDefault();
         onSearch(value);
+        setValue("");
     };
 
     return (
