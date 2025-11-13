@@ -10,6 +10,9 @@ export const Layout = ({ children }: LayoutProps) => (
     <div className={styles.container}>
         <Header/>
         <main className={styles.main}>{children}</main>
+        <p className={styles.footer}>
+            This product uses the TMDB API but is not endorsed or certified by TMDB.
+        </p>
     </div>
 );
 
