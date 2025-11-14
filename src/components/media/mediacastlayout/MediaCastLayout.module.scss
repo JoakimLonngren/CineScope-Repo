@@ -1,0 +1,50 @@
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.castTitle, .actorName{
+    color: #e9b509;
+    display: flex;
+    justify-content: center;
+}
+
+.castGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+    gap: 1.5rem;
+}
+
+.castCard{
+    max-height:12rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.characterName{
+    color:rgb(46, 45, 45);
+}
+
+.castImage {
+    display:flex;
+    justify-content: center;
+
+    width:100%;
+    border-radius: 1rem;
+    max-height: 100%;
+}
+
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-top:1rem;
+}
+p{
+    margin: 0;
+}
+
+

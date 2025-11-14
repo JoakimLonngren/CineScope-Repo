@@ -53,3 +53,18 @@ export interface TmdbTVListResponse {
     total_pages: number;
     total_results: number;
 }
+
+//THis is for getting cast information.
+export interface TmdbCastMember {
+    id: number;
+    name: string;
+    original_name: string;
+    character: string;
+    profile_path: string | null;
+    known_for_department: string;
+}
+
+export interface TmdbCreditsResponse {
+    id: number;
+    cast: TmdbCastMember[];
+}
