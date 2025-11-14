@@ -44,15 +44,6 @@ export const MediaDetailLayout = ({
               className={styles.poster}
             />
           )}
-
-          {onToggleFavorite && (
-            <GlobalButton
-              type="button"
-              className={styles.favoriteButton}
-              onClick={onToggleFavorite}
-              label={isFavorite ? "Remove favorite" : "Add favorite"}
-            />
-          )}
         </div>
 
         <div className={styles.text}>
@@ -67,6 +58,15 @@ export const MediaDetailLayout = ({
           )}
 
           <p className={styles.overview}>{overview}</p>
+
+          {onToggleFavorite && (
+            <GlobalButton
+              type="button"
+              className={styles.favoriteButton}
+              onClick={onToggleFavorite}
+              label={isFavorite ? "Remove favorite" : "Add favorite"}
+            />
+          )}
         </div>
       </div>
     </article>
