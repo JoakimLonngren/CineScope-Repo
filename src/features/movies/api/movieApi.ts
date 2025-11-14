@@ -1,5 +1,15 @@
-import { tmdbClient, type TmdbMovie, type TmdbMovieListResponse } from "../../../api/tmdbClient";
-import { mapFromTmdb, type Movie } from "../types";
+import { 
+    tmdbClient, 
+    type TmdbMovie, 
+    type TmdbMovieListResponse,
+    type TmdbCreditsResponse, 
+}   from "../../../api/tmdbClient";
+import { 
+    mapFromTmdb,
+    mapCastFromTmdb, 
+    type Movie,
+    type CastMember,
+}   from "../types";
 
 //returns a movie based on id.
 export async function getMovieDetails(id: string): Promise<Movie> {
@@ -21,3 +31,10 @@ export async function searchMovies(query: string): Promise<Movie[]>{
     });
     return response.data.results.map(mapFromTmdb);
 };
+
+export async function getMovieCast(id: string): Promise<CastMember[]> {
+    const response = await tmdbClient.get<TmdbCreditsResponse>(
+        `/movie/${id}/credits`
+    );
+    return response.data.cast.map(mapCastFromTmdb);
+} 

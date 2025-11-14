@@ -1,4 +1,4 @@
-import type { TmdbMovie } from "../../api/tmdbClient";
+import type { TmdbMovie, TmdbCastMember } from "../../api/tmdbClient";
 
 export interface Movie {
     id: number;
@@ -9,6 +9,13 @@ export interface Movie {
     backdropPath: string | null;
     releaseDate: string | null;
     voteAverage: number;
+}
+
+export interface CastMember {
+    id: number;
+    name: string;
+    character: string;
+    profilePath: string | null;
 }
 
 //This will map Tmdb type for movie to the projects internal movie-type.
@@ -25,4 +32,11 @@ export const mapFromTmdb = (m: TmdbMovie): Movie => ({
     backdropPath: m.backdrop_path,
     releaseDate: m.release_date,
     voteAverage: m.vote_average,
+});
+
+export const mapCastFromTmdb = (c: TmdbCastMember): CastMember => ({
+    id: c.id,
+    name: c.name,
+    character: c.character,
+    profilePath: c.profile_path,
 });
