@@ -5,39 +5,39 @@ Users can expect a wide arrange of movies, through popular choice and also by se
 through a clean and responsive UI. 
 
 **Live DEMO deployed on Vercel**
--Link: https://cinescope-theta.vercel.app/
+  * Link: https://cinescope-theta.vercel.app/
 
 -------------------------------------------------
 
 **Features**
-  -Browse popular movies.
-  -Search for movies by title.
-  -Detailed movie view (Plot-information, release date, rating, movie-poster).
-  -Shows cast.
-  -Responsive design for seamless usage across all types of screens.
+  * Browse popular movies.
+  * Search for movies by title.
+  * Detailed movie view (Plot-information, release date, rating, movie-poster).
+  * Shows cast.
+  * Responsive design for seamless usage across all types of screens.
 
 -------------------------------------------------
 
 **Features to be added at a later stage**
-  -Working favorite-page which shows every movie the user have favorited.
-  -Functionality to also include series.
+  * Working favorite-page which shows every movie the user have favorited.
+  * Functionality to also include series.
 
 -------------------------------------------------
 
 **Tech stack**
-  *Framework        | React + TypeScript                 |
-  *Build            | Vite                               |
-  *Routing          | React Router                       |
-  *Fetching         | TanStack React Query               |
-  *HTTP Client      | Axios                              |
-  *State management | Zustand                            |
-  *Styling          | SCSS modules and bootstrap         |
-  *API              | TMDB ( The Movie Database ) API V3 |
+  * Framework        | React + TypeScript                 |
+  * Build            | Vite                               |
+  * Routing          | React Router                       |
+  * Fetching         | TanStack React Query               |
+  * HTTP Client      | Axios                              |
+  * State management | Zustand                            |
+  * Styling          | SCSS modules and bootstrap         |
+  * API              | TMDB ( The Movie Database ) API V3 |
 
-  -------------------------------------------------
+-------------------------------------------------
 
-  **Project structure**
-  -Aims to be modular and scalable for easier future implementations.
+**Project structure**
+  * Aims to be modular and scalable for easier future implementations.
 
   
   
