@@ -16,6 +16,7 @@ export const MovieGrid = ({ movies, isLoading }: MovieGridProps) => {
         return <p className={styles.message}>No movies found.</p>
     }
 
+    //returns movies with posters appearing before movies without.
     const sortedMovies = [...movies].sort((a, b) => {
         if(a.posterPath && !b.posterPath) return -1;
         if(!a.posterPath && b.posterPath) return 1;

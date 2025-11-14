@@ -1,14 +1,11 @@
 import { tmdbClient, type TmdbMovie, type TmdbMovieListResponse } from "../../../api/tmdbClient";
 import { mapFromTmdb, type Movie } from "../types";
 
-
-
 //returns a movie based on id.
 export async function getMovieDetails(id: string): Promise<Movie> {
     const response = await tmdbClient.get<TmdbMovie>(`/movie/${id}`);
     return mapFromTmdb(response.data);
 };
-
 
 //returns current popular movies.
 export async function getPopularMovies(): Promise<Movie[]>{
