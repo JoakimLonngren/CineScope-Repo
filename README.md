@@ -13,6 +13,7 @@ through a clean and responsive UI.
   -Browse popular movies.
   -Search for movies by title.
   -Detailed movie view (Plot-information, release date, rating, movie-poster).
+  -Shows cast.
   -Responsive design for seamless usage across all types of screens.
 
 -------------------------------------------------
@@ -24,14 +25,14 @@ through a clean and responsive UI.
 -------------------------------------------------
 
 **Tech stack**
-  -Framework        | React + TypeScript                 |
-  -Build            | Vite                               |
-  -Routing          | React Router                       |
-  -Fetching         | TanStack React Query               |
-  -HTTP Client      | Axios                              |
-  -State management | Zustand                            |
-  -Styling          | SCSS modules and bootstrap         |
-  -API              | TMDB ( The Movie Database ) API V3 |
+  *Framework        | React + TypeScript                 |
+  *Build            | Vite                               |
+  *Routing          | React Router                       |
+  *Fetching         | TanStack React Query               |
+  *HTTP Client      | Axios                              |
+  *State management | Zustand                            |
+  *Styling          | SCSS modules and bootstrap         |
+  *API              | TMDB ( The Movie Database ) API V3 |
 
   -------------------------------------------------
 
