@@ -1,9 +1,8 @@
-import "../../../../assets/scss/App.scss";
-import styles from "./HomePage.module.scss";
+import styles from "./MovieHomePage.module.scss"
 import { usePopularMovies } from "../../hooks/usePopularMovies";
 import { MovieGrid } from "../../components/moviegrid/MovieGrid";
 
-export const HomePage = () => {
+export const MovieHomePage = () => {
     const {
         data: movies = [],
         isLoading,

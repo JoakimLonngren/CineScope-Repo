@@ -8,8 +8,9 @@ interface TVCardProps {
 }
 
 export const TVCard = ({ tvshow }: TVCardProps) => {
+
     return (
-        <article>
+        <article className={styles.card}>
             <Link to={`/tv/${tvshow.id}`} className={styles.imageWrapper}>
                 {tvshow.posterPath ? (
                     <img
@@ -36,6 +37,7 @@ export const TVCard = ({ tvshow }: TVCardProps) => {
                 <p className={styles.overview}>
                     {tvshow.overview || "No description available."}
                 </p>
+                
             </div>
         </article>
     );

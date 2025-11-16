@@ -4,7 +4,7 @@ import { MediaGridLayout } from "../../../../components/media/mediagridlayout/Me
 
 interface TVGridProps {
     tvshows: TVShow[];
-    isLoading: boolean;
+    isLoading?: boolean;
 }
 
 export const TVGrid = ({tvshows, isLoading}: TVGridProps) => {
