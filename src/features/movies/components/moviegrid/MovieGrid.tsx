@@ -1,6 +1,6 @@
-import styles from "./Moviegrid.module.scss";
 import type { Movie } from "../../types";
 import { MovieCard } from "../moviecard/MovieCard";
+import { MediaGridLayout } from "../../../../components/media/mediagridlayout/MediaGridLayout";
 
 interface MovieGridProps {
     movies: Movie[];
@@ -8,26 +8,15 @@ interface MovieGridProps {
 }
 
 export const MovieGrid = ({ movies, isLoading }: MovieGridProps) => {
-    if(isLoading) {
-        return <p className={styles.message}>Loading movies...</p>
-    }
-
-    if(!movies.length) {
-        return <p className={styles.message}>No movies found.</p>
-    }
-
-    //returns movies with posters appearing before movies without.
-    const sortedMovies = [...movies].sort((a, b) => {
-        if(a.posterPath && !b.posterPath) return -1;
-        if(!a.posterPath && b.posterPath) return 1;
-        return 0;
-    });
-
     return (
-        <section className={styles.grid} aria-label="Movies">
-            {sortedMovies.map((movie) => (
-                <MovieCard key={movie.id} movie={movie} />
-            ))}
-        </section>
+        <MediaGridLayout
+            items={movies}
+            isLoading={isLoading}
+            ariaLabel="Movies"
+            loadingMessage="Loading movies..."
+            emptyMessage="No movies found."
+            getHasPoster={(movie) => Boolean(movie.posterPath)}
+            renderItem={(movie) => <MovieCard key={movie.id} movie={movie} />} 
+        />
     );
 };
