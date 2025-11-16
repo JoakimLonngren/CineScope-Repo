@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import { searchTV } from "../api/tvApi";
+import { searchTVShows } from "../api/tvApi";
 
-export const useSearchTV = (query: string) =>
+export const useSearchTVShows = (query: string) =>
     useQuery({
-        queryKey: ["search-tv", query],
-        queryFn: () => searchTV(query),
+        queryKey: ["search-tvshows", query],
+        queryFn: () => searchTVShows(query),
         enabled: !!query.trim(),
     });

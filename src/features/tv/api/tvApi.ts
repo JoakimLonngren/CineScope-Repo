@@ -14,7 +14,7 @@ export async function getPopularTV(): Promise<TVShow[]> {
 }
 
 //Search for a TV show.
-export async function searchTV(query: string): Promise<TVShow[]> {
+export async function searchTVShows(query: string): Promise<TVShow[]> {
     if(!query.trim()) return [];
     const response = await tmdbClient.get<TmdbTVListResponse>("/search/tv", {
         params: { query }
