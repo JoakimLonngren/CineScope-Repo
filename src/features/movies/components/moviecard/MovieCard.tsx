@@ -3,8 +3,7 @@ import type { Movie } from "../../types";
 import { useFavoritesStore } from "../../../../store/useFavoritesStore";
 import styles from "./Moviecard.module.scss";
 import GlobalButton from "../../../../components/common/button/GlobalButton";
-
-const POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342";
+import { POSTER_BASE_URL } from "../../../../constants/images";
 
 interface MovieCardProps {
     movie: Movie;
